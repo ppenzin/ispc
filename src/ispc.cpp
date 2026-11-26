@@ -2832,6 +2832,8 @@ llvm::Triple Target::GetTriple() const {
             triple.setArchName("armv8a");
         } else if (m_arch == Arch::aarch64) {
             triple.setArchName("aarch64");
+        } else if (m_arch == Arch::riscv64) {
+            triple.setArchName("riscv64");
         } else if (m_arch == Arch::ppc64le) {
             triple.setArchName("ppc64le");
         } else {
